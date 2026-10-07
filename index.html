@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Lecture Capture privacy policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --surface: #FFFFFF;
+      --window: #F2F2F7;
+      --label: #000000;
+      --label-secondary: rgba(0, 0, 0, 0.55);
+      --hairline: rgba(0, 0, 0, 0.10);
+      --accent: #3F4FD6;
+      --font-system: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Helvetica Neue", sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --surface: #1E1E1E;
+        --window: #242426;
+        --label: #FFFFFF;
+        --label-secondary: rgba(255, 255, 255, 0.55);
+        --hairline: rgba(255, 255, 255, 0.13);
+        --accent: #8E99FF;
+      }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--label); background: var(--window); font: 400 16px/26px var(--font-system); -webkit-font-smoothing: antialiased; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 20px 32px; }
+    .wordmark { margin: 0 0 24px; font: 600 15px/20px var(--font-system); }
+    h1 { margin: 0; font: 600 22px/28px var(--font-system); }
+    .meta { margin: 8px 0 0; color: var(--label-secondary); font-size: 13px; line-height: 17px; }
+    .summary { margin: 24px 0 0; padding: 16px; border: 1px solid var(--hairline); border-radius: 10px; background: var(--surface); }
+    h2 { margin: 32px 0 8px; font: 600 15px/20px var(--font-system); }
+    p, ul { margin: 0 0 12px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    code { font: 400 14px/22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    a { color: var(--accent); }
+    footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--hairline); color: var(--label-secondary); font-size: 13px; line-height: 17px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="wordmark">Lecture Capture</p>
+    <h1>Privacy policy</h1>
+    <p class="meta">Effective October 7, 2026. Applies to the Lecture Capture Chrome extension.</p>
+
+    <p class="summary">Lecture Capture does not collect, transmit, sell or share any of your data. Everything it saves goes to a folder or .zip file on your own computer, and nowhere else. There is no account, no server and no analytics.</p>
+
+    <h2>What the extension reads</h2>
+    <p>When you start an archive, Lecture Capture reads your own course materials from the Canvas and Panopto sites you are already signed in to: your course list, files, pages, announcements, and lecture transcripts. It reads them inside your open Canvas and Panopto tabs, using requests to those same sites, with the sign-in you already have. It never asks for, sees or stores your password.</p>
+    <p>It only reads sites you allow. Access to Canvas (<code>instructure.com</code>) and Panopto (<code>panopto.com</code>) is requested when you click Allow access, and you can remove it at any time from Chrome's extension settings.</p>
+
+    <h2>Where your data goes</h2>
+    <ul>
+      <li>Files are written to the folder you choose, or to one .zip download. Both are on your computer.</li>
+      <li>Nothing is sent to the developer, to any server, or to any third party. The extension makes no network requests other than reading from your Canvas and Panopto sites.</li>
+      <li>Videos are never downloaded.</li>
+    </ul>
+
+    <h2>What the extension stores in Chrome</h2>
+    <ul>
+      <li>The archive queue (which items are done, waiting or failed), so a stopped archive can resume where it left off. Kept in Chrome's local extension storage.</li>
+      <li>A one-line summary of the last archive (when it ran and how many items it saved), shown in the toolbar popup. Kept in Chrome's local extension storage.</li>
+      <li>A reference to the folder you chose, so Chrome can ask to reconnect to it next time. Kept in the extension's local IndexedDB. It holds the folder's handle, not its contents.</li>
+    </ul>
+    <p>This information stays on your computer and is removed when you uninstall the extension.</p>
+
+    <h2>What the extension does not do</h2>
+    <ul>
+      <li>No analytics, tracking, advertising or fingerprinting.</li>
+      <li>No remote code. Everything the extension runs ships inside it.</li>
+      <li>No sale or transfer of data, and no use of data for anything other than saving your course materials for you.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted at this address with a new effective date. A change that would send any data off your computer would be described here before it shipped.</p>
+
+    <footer>Lecture Capture is free and has no account. Questions about this policy can be sent to the contact address on the extension's Chrome Web Store page.</footer>
+  </main>
+</body>
+</html>
